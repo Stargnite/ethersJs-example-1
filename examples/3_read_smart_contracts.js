@@ -34,11 +34,11 @@ async function main() {
   console.log( `Token total supply: ${totalSupply}`)
   
   // Get ERC20 balance
-  const wallet = "0x4FF7eA40DBB5294Cc51E6d11cA3C4b955c783321"
+  const wallet = "0x34a10da5A94299A891Dcb42c5135986Bf7E427B0"
   const balance = await contract.balanceOf(wallet);
   
   // Log ERC20 balance
-  console.log(`wallet balance: ${balance}`)
+  console.log(`wallet balance: ${ethers.formatUnits(balance, decimals)}`)
 }
 
 main()
